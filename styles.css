@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Roboto:wght@500&display=swap');
+:root{
+    --bg-main: #353b48;
+
+    --yellow-color: #fbc531;
+    --orange-color: #e1b12c;
+    --whitish-color: #f5f6fa;
+    --button-color: #2f3640;
+
+    --fs-big: 3.2rem;
+    --fs-medium: 1.6rem;
+    --fs-small: 1.3rem;
+
+    --ff-lato: 'Lato', sans-serif;
+    --ff-roboto: 'Roboto', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* utility classes */
+.text-center{text-align: center;}
+.fs-big{font-size: var(--fs-big);}
+.fs-medium{font-size: var(--fs-medium);}
+.fs-small{font-size: var(--fs-small);}
+.bg-main{background-color: var(--bg-main);}
+.flex {
+    display: flex;
+    gap: 2rem;
+}
+
+.main{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.introduction{
+    margin-bottom: 5rem;
+}
+.introduction h1{
+    color: var(--whitish-color);
+    font-weight: 500;
+    font-family: var(--ff-roboto);
+}
+.introduction span{
+    color: var(--orange-color);
+    font-family: var(--ff-lato);
+    font-weight: 300;
+}
+.buttons button{
+    font-size: var(--fs-medium);
+    font-weight: 500;
+    font-family: var(--ff-roboto);
+    width: 15rem;
+    padding: 2rem 1rem;
+    border: none;
+    border-radius: 15px;
+    color: var(--whitish-color);
+    cursor: pointer;
+    background-color: var(--button-color);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
