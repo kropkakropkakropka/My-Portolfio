@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,67 @@
     <link rel="stylesheet" href="styles.css">
     <title>Portolfio</title>
 </head>
-<body>
-    <section class="navbar">
 
-    </section>
-    <section class="main bg-main flex">
-        <div class="introduction text-center">
+<body>
+    <header class="none">
+        <h1>kropkakropkakropka</h1>
+        <nav class="flex">
+            <ul class="flex">
+                <li class="tab-btn" data-id="about">About Me</li>
+                <li class="tab-btn" data-id="projects">Projects</li>
+                <li class="tab-btn" data-id="cv">CV</li>
+                <li class="tab-btn" data-id="contact">Contact Me!</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="bg-main flex">
+        <section class="introduction text-center">
             <h1 class="fs-big">Jakub Nowak</h1>
-            <span class="fs-small">Front End Developer</span>
-        </div>
-        <div class="buttons flex">
-            <button id="about">About Me</button>
-            <button id="projects">Projects</button>
-            <button id="cv">CV</button>
-            <button id="contact">Contact Me!</button>
-        </div>
-    </section>
+            <p class="fs-small">Front End Developer</p>
+        </section>
+        <article class="buttons flex">
+            <button class="tab-btn" data-id="about">About Me</button>
+            <button class="tab-btn" data-id="projects">Projects</button>
+            <button class="tab-btn" data-id="cv">CV</button>
+            <button class="tab-btn" data-id="contact">Contact Me!</button>
+        </article>
+        <article id="about-me" class="none">
+            <h2>Jakub Nowak</h2>
+            <p>I'm front end develeoper from poland</p>
+            <h3>Technologies that I'm familiar with:</h3>
+            <ul>
+                <li>JavaScript</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Bootstrap</li>
+            </ul>
+            <h3>Planning to learn:</h3>
+            <ul>
+                <li>React</li>
+                <li>SASS</li>
+            </ul>
+        </article>
+        <article id="projects" class="none">
+            <h2>My projects</h2>
+            <section>
+                <h3>Projetct name</h3>
+                <h4>Built using:</h4>
+                <ul>
+                    <li>technology</li>
+                    <li>technology</li>
+                    <li>technology</li>
+                </ul>
+            </section>
+        </article>
+        <article id="cv" class="none">
+            <img src="" alt="cv">
+            <a href="">Download</a>
+        </article>
+        <article id="contact" class="none">
+            email sending script here
+        </article>
+    </main>
+    <script src="main.js"></script>
 </body>
+
 </html>
