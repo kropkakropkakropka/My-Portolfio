@@ -10,11 +10,11 @@
 </head>
 
 <body>
-    <header class="none">
-        <h1>kropkakropkakropka</h1>
-        <nav class="flex">
+    <header id="header" class="none">
+        <nav class="flex bg-main">
+            <a class="tab-btn fs-medium" data-id="introduction">kropkakropkakropka</a>
             <ul class="flex">
-                <li class="tab-btn" data-id="about">About Me</li>
+                <li class="tab-btn" data-id="about-me">About Me</li>
                 <li class="tab-btn" data-id="projects">Projects</li>
                 <li class="tab-btn" data-id="cv">CV</li>
                 <li class="tab-btn" data-id="contact">Contact Me!</li>
@@ -22,17 +22,19 @@
         </nav>
     </header>
     <main class="bg-main flex">
-        <section class="introduction text-center">
-            <h1 class="fs-big">Jakub Nowak</h1>
-            <p class="fs-small">Front End Developer</p>
-        </section>
-        <article class="buttons flex">
-            <button class="tab-btn" data-id="about">About Me</button>
-            <button class="tab-btn" data-id="projects">Projects</button>
-            <button class="tab-btn" data-id="cv">CV</button>
-            <button class="tab-btn" data-id="contact">Contact Me!</button>
+        <article id="introduction" class="active">
+            <section class="introduction text-center">
+                <h1 class="fs-big">Jakub Nowak</h1>
+                <p class="fs-small">Front End Developer</p>
+            </section>
+            <section class="buttons flex fs-medium">
+                <button class="tab-btn" data-id="about-me">About Me</button>
+                <button class="tab-btn" data-id="projects">Projects</button>
+                <button class="tab-btn" data-id="cv">CV</button>
+                <button class="tab-btn" data-id="contact">Contact Me!</button>
+            </section>
         </article>
-        <article id="about-me" class="none">
+        <article id="about-me">
             <h2>Jakub Nowak</h2>
             <p>I'm front end develeoper from poland</p>
             <h3>Technologies that I'm familiar with:</h3>
@@ -48,7 +50,7 @@
                 <li>SASS</li>
             </ul>
         </article>
-        <article id="projects" class="none">
+        <article id="projects">
             <h2>My projects</h2>
             <section>
                 <h3>Projetct name</h3>
@@ -60,11 +62,11 @@
                 </ul>
             </section>
         </article>
-        <article id="cv" class="none">
+        <article id="cv">
             <img src="" alt="cv">
             <a href="">Download</a>
         </article>
-        <article id="contact" class="none">
+        <article id="contact">
             email sending script here
         </article>
     </main>
