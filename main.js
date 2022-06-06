@@ -4,19 +4,18 @@ const header = document.getElementById('header');
 buttons.forEach(button => {
     button.addEventListener('click', e =>{
         buttonTarget = button.dataset.id;
-        if(buttonTarget !== 'introduction'){
-            // if(header.classList.contains('none')){header.classList.remove('none');}
-            header.classList.remove('none');
+        if (document.querySelectorAll('.tab-btn-active').length != 0) {
+            document.querySelector('.tab-btn-active').classList.remove('tab-btn-active');
         }
-        else{
-            // if(!header.classList.contains('none')){header.classList.add('none');}
-            header.classList.add('none');
+        if(buttonTarget != 'introduction'){
+            button.classList.add('tab-btn-active');   
         }
 
-        current = document.querySelector('.active');
-        current.classList.remove('active');
+
+        current = document.querySelector('article.flex');
+        current.classList.remove('flex');
 
         target = document.getElementById(buttonTarget);
-        target.classList.add('active');
+        target.classList.add('flex');
     })
 })
