@@ -10,8 +10,7 @@ buttons.forEach(button => {
         if(buttonTarget != 'introduction'){
             button.classList.add('tab-btn-active');   
         }
-
-
+        
         current = document.querySelector('article.flex');
         current.classList.remove('flex');
 

@@ -1,0 +1,8 @@
+.bg{
+    &-primary{
+        @include set-background-color($primary-color);
+    }
+    &-dark{
+        @include set-background-color($dark-color);
+    }
+}
