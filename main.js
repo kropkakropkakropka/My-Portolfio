@@ -11,7 +11,7 @@ buttons.forEach(button => {
             button.classList.add('tab-btn-active');   
         }
         
-        current = document.querySelector('article.flex');
+        current = document.querySelector('.flex');
         current.classList.remove('flex');
 
         target = document.getElementById(buttonTarget);

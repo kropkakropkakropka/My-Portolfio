@@ -9,6 +9,18 @@
   color: #fff;
 }
 
+.fs-big {
+  font-size: 3.7rem;
+}
+
+.fs-medium {
+  font-size: 2rem;
+}
+
+.fs-small {
+  font-size: 1.1rem;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -21,10 +33,12 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
+  overflow: hidden;
 }
 
 a {
   text-decoration: none;
+  color: white;
   cursor: pointer;
 }
 
@@ -33,9 +47,49 @@ ul {
   cursor: pointer;
 }
 
+main {
+  min-height: 100vh;
+}
+
 article {
   display: none;
-  min-height: 100vh;
+  height: 100vh;
+  -webkit-animation-name: content;
+          animation-name: content;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes content {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(5%);
+            transform: translateY(5%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes content {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(5%);
+            transform: translateY(5%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
 }
 
 .tab-btn-active {
@@ -51,6 +105,13 @@ article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 2rem;
 }
 
@@ -80,5 +141,41 @@ article {
 
 .navbar ul li:hover {
   color: #1dd1a1;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+#introduction {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#introduction h1 {
+  color: #1dd1a1;
+  margin-top: -10rem;
+}
+
+#introduction .icons {
+  margin-top: 1.5rem;
+}
+
+#introduction .icons i {
+  padding-inline: 1rem;
+}
+
+#about-me {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#about-me div {
+  padding-inline: 5rem;
 }
 /*# sourceMappingURL=style.css.map */

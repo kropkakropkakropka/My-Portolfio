@@ -3,6 +3,9 @@ $dark-color: #2f3640;
 $orange-color: #e1b12c;
 $whitish-color: #f5f6fa;
 $success-color: #1dd1a1;
+$big: 3.7rem;
+$medium: 2rem;
+$small: 1.1rem;
 
 @function set-text-color($color) {
     @if (lightness($color) > 60) {

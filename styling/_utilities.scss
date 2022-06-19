@@ -6,3 +6,14 @@
         @include set-background-color($dark-color);
     }
 }
+.fs{
+    &-big{
+        font-size: $big;
+    }
+    &-medium{
+        font-size: $medium;
+    }
+    &-small{
+        font-size: $small;
+    }
+}

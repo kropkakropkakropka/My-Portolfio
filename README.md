@@ -3,5 +3,5 @@
 ![](./screenshot.jpg)
 
 todo:
-add some styling
+fix mailto
 add content

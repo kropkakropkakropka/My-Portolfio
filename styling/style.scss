@@ -13,22 +13,40 @@ body {
     font-size: 1rem;
     line-height: 1.6;
     background-color: #fff;
-    
+    overflow: hidden;
 }
 
 a {
     text-decoration: none;
+    color: white;
     cursor: pointer;
 }
 
 ul {
     list-style: none;
-    cursor: pointer
+    cursor: pointer;
 }
-
+main{min-height: 100vh;}
 article{
     display: none;
-    min-height: 100vh;
+    height: 100vh;
+    animation: {
+        name: content;
+        direction: normal;
+        duration: .5s;
+        timing-function: ease-in-out;
+        iteration-count: 1;
+    }
+}
+@keyframes content {
+    from {
+      opacity: 0;
+      transform: translateY(5%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
 }
 
 .tab-btn-active {
@@ -42,6 +60,8 @@ article{
 
 .flex {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -53,14 +73,38 @@ article{
     border-bottom: $success-color 4px solid;
 
     ul {
+
         display: flex;
 
         li {
             padding-inline: 1rem;
-
+            
             &:hover {
                 color: $success-color;
+                transition: .2s ease-in-out;
             }
         }
+    }
+}
+
+#introduction{
+    justify-content: center;
+    text-align: center;
+    h1{
+        color: $success-color;
+        margin-top: -10rem;
+    }
+    .icons{
+        margin-top: 1.5rem;
+        i{
+            padding-inline: 1rem;
+        }
+    }
+}
+#about-me{
+    flex-direction: row;
+    justify-content: center;
+    div{
+        padding-inline: 5rem;
     }
 }
