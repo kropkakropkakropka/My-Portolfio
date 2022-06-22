@@ -9,6 +9,11 @@
   color: #fff;
 }
 
+.bg-light {
+  background-color: #f1f2f6;
+  color: #333;
+}
+
 .fs-big {
   font-size: 3.7rem;
 }
@@ -33,7 +38,6 @@ body {
   font-size: 1rem;
   line-height: 1.8;
   background-color: #fff;
-  overflow: hidden;
 }
 
 a {
@@ -50,7 +54,6 @@ button {
 
 ul {
   list-style: none;
-  cursor: pointer;
 }
 
 main {
@@ -59,7 +62,7 @@ main {
 
 article {
   display: none;
-  height: 100vh;
+  min-height: 100vh;
   -webkit-animation-name: content;
           animation-name: content;
   -webkit-animation-direction: normal;
@@ -140,6 +143,7 @@ article {
 
 .navbar ul li {
   padding-inline: 1rem;
+  cursor: pointer;
 }
 
 .navbar ul li:hover {
@@ -166,8 +170,8 @@ article {
 
 #introduction .icons i {
   padding-inline: 1rem;
-  color: #40739e;
-  opacity: 0.6;
+  color: #06182c;
+  opacity: 0.4;
 }
 
 #introduction .icons i:hover {
@@ -177,43 +181,94 @@ article {
 }
 
 #about-me {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#about-me div {
-  margin-top: 13rem;
+#about-me .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+#about-me .card {
   padding: 3rem 2rem;
   border-radius: 15px;
   -webkit-box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
           box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-  height: 50%;
-  width: 450px;
+  width: 28rem;
+  margin-top: -8rem;
 }
 
-#about-me div h2 {
+#about-me .card h2 {
   margin-bottom: 1rem;
+  font-size: 1.3rem;
 }
 
-#about-me div h3 {
+#about-me .card h3 {
   margin: 1rem 0;
 }
 
-#about-me div p, #about-me div li {
+#about-me .card p, #about-me .card li {
   font-weight: 300;
 }
 
-#about-me div button {
+#about-me .card button {
   background-color: #353b48;
   color: white;
-  -webkit-box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-          box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   padding: 1rem;
   margin-top: 2rem;
+}
+
+#projects {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects h2 {
+  margin-top: 2rem;
+}
+
+#projects .work {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+#projects .work h3 {
+  font-weight: 700;
+}
+
+#projects .work h4 {
+  font-weight: 500;
+}
+
+#projects .work div {
+  text-align: center;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  width: 20rem;
+  padding: 2rem;
+}
+
+#projects .work img {
+  height: 100px;
+  margin: 1rem 0;
+}
+
+#projects .work li {
+  font-weight: 100;
 }
 /*# sourceMappingURL=style.css.map */

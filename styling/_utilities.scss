@@ -5,6 +5,9 @@
     &-dark{
         @include set-background-color($dark-color);
     }
+    &-light{
+        @include set-background-color($light-color);
+    }
 }
 .fs{
     &-big{
