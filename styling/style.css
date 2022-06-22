@@ -170,11 +170,13 @@ article {
 
 #introduction .icons i {
   padding-inline: 1rem;
-  color: #06182c;
-  opacity: 0.4;
+  color: #40739e;
+  opacity: 0.6;
 }
 
 #introduction .icons i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   opacity: 1;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
@@ -228,6 +230,13 @@ article {
   margin-top: 2rem;
 }
 
+#about-me .card button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
 #projects {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -244,6 +253,7 @@ article {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   gap: 4rem;
+  margin-bottom: 5rem;
 }
 
 #projects .work h3 {

@@ -100,10 +100,11 @@ article{
         margin-top: 1.5rem;
         i{
             padding-inline: 1rem;
-            color: rgb(6, 24, 44);
-            opacity: 0.4;
+            color: #40739e;
+            opacity: 0.6;
         }
         i:hover{
+            transform: scale(1.1);
             opacity: 1;
             transition: .2s ease-in-out;
         }
@@ -140,6 +141,10 @@ article{
             padding: 1rem;
             margin-top: 2rem;
         }
+        button:hover{
+            transform: scale(1.1);
+            transition: .3s ease-in-out;
+        }
     }
 }
 #projects{
@@ -151,6 +156,7 @@ article{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 4rem;
+        margin-bottom: 5rem;
         h3{
             font-weight: 700;
         }
