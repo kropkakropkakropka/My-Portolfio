@@ -3,4 +3,4 @@
 ![](./screenshot.jpg)
 
 todo:
-add content
+remake project section so it takes data about projects from json file
