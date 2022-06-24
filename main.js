@@ -23,13 +23,7 @@ buttons.forEach(button => {
 
 imagePreviews.forEach(img => {
     img.addEventListener('click', ()=>{
-        console.log(img);
-        img.classList.add('zoom');
-        img.classList.remove('img-preview');
-        var activeImg = img;
-        activeImg.addEventListener('click', ()=>{
-            activeImg.classList.remove('zoom');
-            img.classList.add('img-preview');
-        })
+        img.classList.toggle('zoom');
+        img.classList.toggle('img-preview');
     })
 })

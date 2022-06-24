@@ -290,6 +290,10 @@ article {
   margin: 1.3rem auto;
 }
 
+#projects .work div a {
+  text-decoration: underline;
+}
+
 #projects .work li {
   font-weight: 300;
 }
