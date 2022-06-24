@@ -81,7 +81,7 @@ article{
     justify-content: space-between;
     padding: 0.7rem 2rem;
     border-bottom: $success-color 4px solid;
-
+    #nav-button{display: none;}
     ul {
 
         display: flex;
@@ -104,7 +104,7 @@ article{
         margin-top: 1.5rem;
         i{
             padding-inline: 1rem;
-            color: #40739e;
+            color: $success-color;
             opacity: 0.6;
         }
         i:hover{
@@ -232,6 +232,28 @@ article{
     }
 }
 @media (max-width: 700px) {
+    .navbar{
+        flex-direction: column;
+        .bruh{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            #nav-button{
+                display: block;
+                margin-block: auto;
+            }
+        }
+        ul{
+            display: none;
+            margin-top: 1rem;
+        }
+        .active{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
     #projects{
         // h2{
         //     margin-top: 8rem;

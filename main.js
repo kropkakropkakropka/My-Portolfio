@@ -2,6 +2,12 @@ const buttons = document.querySelectorAll('.tab-btn');
 const header = document.getElementById('header');
 const imagePreviews = document.querySelectorAll('.img-preview')
 const projectsSection = document.querySelector('.work');
+const navButton = document.getElementById('nav-button');
+const menu = document.getElementById('toggl-nav');
+
+navButton.addEventListener('click', ()=>{
+    menu.classList.toggle('active');
+})
 
 buttons.forEach(button => {
     button.addEventListener('click', e =>{
