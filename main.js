@@ -1,6 +1,7 @@
 const buttons = document.querySelectorAll('.tab-btn');
 const header = document.getElementById('header');
 const imagePreviews = document.querySelectorAll('.img-preview')
+const projectsSection = document.querySelector('.work');
 
 buttons.forEach(button => {
     button.addEventListener('click', e =>{

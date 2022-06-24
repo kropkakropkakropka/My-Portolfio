@@ -117,6 +117,7 @@ article{
 #about-me{
     justify-content: center;
     align-items: center;
+    padding: 6rem 0;
     .grid-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -177,6 +178,18 @@ article{
             box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
             width: 20rem;
             padding: 2rem;
+            hr{
+                width: 50%;
+                margin: 1.3rem auto;
+            }
+            // a{  
+            //     position: absolute;
+            //     bottom: 0;
+            //     left: 0;
+            //     right: 0;
+            //     margin-inline: auto;
+            //     text-decoration: underline;
+            // }
         }
         li{
             font-weight: 300;
@@ -236,6 +249,7 @@ article{
         }
     }
     #about-me{
+        padding: 0;
         .grid-container{
             display: grid;
             grid-template-columns: repeat(1, 1fr);
@@ -246,5 +260,12 @@ article{
             padding: 1.5rem 1rem;
             margin-inline: 3rem
         }
+    }
+}
+@media (max-width: 425px) {
+    #about-me{
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0;
     }
 }
