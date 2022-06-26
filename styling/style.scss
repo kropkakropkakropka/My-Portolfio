@@ -192,18 +192,7 @@ article{
         .img-preview{
             height: 100px;
             margin: 1rem 0;
-            cursor: zoom-in;
-        }
-        // .img-preview:hover{
-        //     transform: scale(1.1);
-        // }
-        .zoom{
-            position: fixed;
-            width: 80%;
-            height: 80%;
-            top: 10%;
-            left:10%;
-            cursor: zoom-out;
+            cursor: pointer;
         }
     }
 }
@@ -234,6 +223,7 @@ article{
 @media (max-width: 700px) {
     .navbar{
         flex-direction: column;
+        z-index: 10000;
         .bruh{
             display: flex;
             flex-direction: row;
@@ -280,9 +270,20 @@ article{
     }
 }
 @media (max-width: 425px) {
+    #introduction{
+        .fs-big{
+            font-size: 3rem;
+        }
+    }
     #about-me{
         justify-content: center;
         align-items: center;
         padding: 1rem 0;
+        .fs-medium{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 0.9rem;
+        }
     }
 }

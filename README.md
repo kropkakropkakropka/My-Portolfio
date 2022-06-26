@@ -1,6 +1,8 @@
 # My-Portolfio
 
-![](./screenshot.jpg)
+Built with:
+-html
+-css
+-js
+-sass
 
-todo:
-add font sizes for mobile

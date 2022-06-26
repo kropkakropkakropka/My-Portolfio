@@ -6,6 +6,7 @@ $big: 3.7rem;
 $medium: 2rem;
 $small: 1.1rem;
 
+
 @function set-text-color($color) {
     @if (lightness($color) > 60) {
       @return #333;

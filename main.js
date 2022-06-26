@@ -27,9 +27,9 @@ buttons.forEach(button => {
     })
 })
 
-imagePreviews.forEach(img => {
-    img.addEventListener('click', ()=>{
-        img.classList.toggle('zoom');
-        img.classList.toggle('img-preview');
-    })
-})
+// imagePreviews.forEach(img => {
+//     img.addEventListener('click', ()=>{
+//         img.classList.toggle('zoom');
+//         img.classList.toggle('img-preview');
+//     })
+// })
